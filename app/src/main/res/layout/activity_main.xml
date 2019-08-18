@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.janms.funwithflags.MainActivity">
+
+
+    <TextView
+        android:id="@+id/hightxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_below="@+id/startbtn"
+        android:layout_marginTop="73dp"
+        android:text="Highscore:"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Start" />
+
+    <TextView
+        android:id="@+id/scoretxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hightxt"
+        android:layout_alignBottom="@+id/hightxt"
+        android:layout_marginStart="45dp"
+        android:layout_toEndOf="@+id/startbtn"
+        android:text="0"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp"
+        android:src="@mipmap/ic_launcher" />
+</RelativeLayout>
